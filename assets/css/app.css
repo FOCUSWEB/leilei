@@ -9217,13 +9217,14 @@ md-tooltip {
 
 body {
   font-family: "Microsoft YaHei", "微软雅黑", Helvetica, Arial, sans-serif;
+  overflow: hidden;
 }
 
 #login-box {
   margin-top: 200px;
 }
 md-content[ui-view].ng-enter {
-  animation: SlideFromBottom 1s both ease;
+  animation: SlideFromBottom 0.5s both ease;
 }
 @keyframes SlideFromBottom {
   from {
