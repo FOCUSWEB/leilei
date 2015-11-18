@@ -1,19 +1,8 @@
-<div class="navbar navbar-default">
-	<div class="container-fluid">
-		<div class="navbar-brand">
-			LeiLei
-		</div>
-		<ul class="nav navbar-nav navbar-right">
-			<li ui-sref-active="active">
-				<a ui-sref="frontend.home">首页</a>
-			</li>
-			<li ui-sref-active="active">
-				<a ui-sref="frontend.price">价格</a>
-			</li>
-			<li>
-				<a ui-sref="login">登录</a>
-			</li>
-		</ul>
-	</div>
-</div>
-<div ui-view="content" autoscroll="true"></div>
+<md-toolbar layout="row" class="md-warn md-whiteframe-z3">
+	<md-list layout-align="end end" class="md-toolbar-tools">
+		<md-list-item ng-repeat="menuitem in menu">
+			<md-button ui-sref="{{ menuitem['ui-sref'] }}" class="md-raised">{{ menuitem['label'] }}</md-button>
+		</md-list-item>
+	</md-list>
+</md-toolbar>
+<md-content md-scroll-y layout-padding ui-view="content" flex layout="column"></md-content>

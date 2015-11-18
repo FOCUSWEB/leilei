@@ -2,8 +2,11 @@
  * Created by focus on 2015/11/16.
  */
 "use strict";
-var app = angular.module('app', ['ngAnimate', 'ui.router']);
+var app = angular.module('app', ['ngAnimate', 'ngMaterial', 'ui.router']);
 
+/*
+ Route
+ */
 app.config(function ($stateProvider, $urlRouterProvider) {
 	$urlRouterProvider.otherwise("/home");
 

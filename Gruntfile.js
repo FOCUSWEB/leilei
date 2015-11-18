@@ -5,9 +5,12 @@ module.exports = function (grunt) {
 			main: {
 				files: {
 					'assets/js/app.js': [
+						'assets/bower/jquery/dist/jquery.js',
 						'assets/bower/angular/angular.js',
 						'assets/bower/angular-animate/angular-animate.js',
+						'assets/bower/angular-aria/angular-aria.js',
 						'assets/bower/angular-ui-router/release/angular-ui-router.js',
+						'assets/bower/angular-material/angular-material.js',
 						'assets/src/js/app.js',
 						'assets/src/js/controllers.js'
 					]
@@ -26,7 +29,7 @@ module.exports = function (grunt) {
 			main: {
 				files: {
 					'assets/css/app.css': [
-						'assets/bower/bootstrap/dist/css/bootstrap.css',
+						'assets/bower/angular-material/angular-material.css',
 						'assets/src/css/global.css',
 						'assets/src/css/main.css'
 					]
