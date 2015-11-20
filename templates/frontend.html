@@ -1,8 +1,0 @@
-<md-toolbar layout="row" class="md-warn md-whiteframe-z3">
-	<md-list layout-align="end end" class="md-toolbar-tools">
-		<md-list-item ng-repeat="menuitem in menu">
-			<md-button ui-sref="{{ menuitem['ui-sref'] }}" class="md-raised">{{ menuitem['label'] }}</md-button>
-		</md-list-item>
-	</md-list>
-</md-toolbar>
-<md-content md-scroll-y layout-padding ui-view="content" flex layout="column"></md-content>
